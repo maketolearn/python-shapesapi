@@ -1,0 +1,20 @@
+<form method="post" action="/shapes/" enctype="multipart/form-data">
+	<fieldset><legend>Add Shape:</legend>
+	<ol>
+	<li><label>Shape Name: <input type="text" name="name" /></label></li>
+	<li><label>Creator: <input type="text" name="creator" /></label></li>
+	<li>
+	<fieldset><legend>Category:</legend>
+		{% for category in categories %}
+		<label><input type="checkbox" name="category" value="{{ category.name }}" />{{ category.name }}</label>
+		{% end %}
+		<label>New category: <input type="text" name="category" value="" size="30" maxlength="100" /></label>
+	</fieldset>
+	</li>
+	<li><label>School: <input type="text" name="school" /></label></li>
+	<li><label>Shape File: <input type="file" name="file" /></label></li>
+	<li><label>Mask File: <input type="file" name="mask" /></label></li>
+	</ol>
+	<input type="submit" />
+	</fieldset>
+</form>

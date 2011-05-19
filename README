@@ -1,0 +1,3 @@
+This is the API for accessing shapes created for MakeToLearn.org and the SITE Design Library. See http://www.maketolearn.org/shapes/ for more information.
+
+The API is basically a purpose-driven Python wrapper for the Digital Object Repository (DO Repository) developed by the CNRI. Please see http://www.dorepository.org/ for more information on the DO Repository. Note that the API does include a Python wrapper for the DO Repository that can be put to multiple purposes; the module is call dorepository.py
